@@ -3,8 +3,6 @@ import PriceRisers from "@/components/PriceRisers";
 import PriceFallers from "@/components/PriceFallers";
 import AllProducts from "@/components/AllProducts";
 
-// represents the not found page
-
 import type { Product } from "@/lib/utils";
 
 async function getProducts(): Promise<Product[]> {
@@ -24,17 +22,22 @@ export default async function Home() {
 
   return (
     <>
+      {/* Banner Section */}
       <Banner />
 
-      <div className="bg-green-50/40 px-4 py-10">
+      {/* Products Section */}
+      <section className="bg-white px-4 py-10">
         <div className="mx-auto max-w-7xl space-y-14">
+          {/* Price Risers */}
           <PriceRisers products={products} />
 
+          {/* Price Fallers */}
           <PriceFallers products={products} />
 
+          {/* All Products */}
           <AllProducts products={products} />
         </div>
-      </div>
+      </section>
     </>
   );
 }
