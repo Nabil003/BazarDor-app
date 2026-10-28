@@ -3,6 +3,8 @@ import PriceRisers from "@/components/PriceRisers";
 import PriceFallers from "@/components/PriceFallers";
 import AllProducts from "@/components/AllProducts";
 
+// represents the not found page
+
 import type { Product } from "@/lib/utils";
 
 async function getProducts(): Promise<Product[]> {
