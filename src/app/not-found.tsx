@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Home, SearchX } from "lucide-react";
 
+// represents the not-found page
 export default function NotFound() {
   return (
     <main className="flex min-h-[70vh] items-center justify-center bg-[#f3f8f3] px-4 py-16">
