@@ -10,6 +10,7 @@ export default function PriceTicker() {
     const fetchProducts = async () => {
       try {
         const response = await fetch(
+          // represents the api section
           "https://api.api-store.workers.dev/api/bazardor/products",
         );
 
