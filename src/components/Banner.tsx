@@ -59,7 +59,7 @@ export default function Banner() {
 
           <div className="flex items-center justify-center md:justify-end">
             <Image
-              src="/bazar-hero.png"
+              src="/bazar-hero.png" // represents the hero logo
               alt="বাজারের পণ্য"
               width={240}
               height={200}
